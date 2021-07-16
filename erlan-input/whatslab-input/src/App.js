@@ -1,4 +1,9 @@
 import React from 'react'
+import MainContainer from './components/MainContainer'
+import Container from './components/Container'
+import Display from './components/Display'
+import Input from './components/Input'
+
 
 class App extends React.Component {
   state = {
@@ -43,21 +48,26 @@ class App extends React.Component {
         )
         })
         return (
-          <div>
+          <MainContainer>
+            <Container>
+            <Display>
            <span> {pessoasComMensagens}</span>
-           
-            <input 
+           </Display>
+           <Input>
+            <input className = "nome-usuario "
             value={this.state.valorInputUsuario}
             onChange={this.onChangeInputUsuario}
             placeholder={"Usuário"}/>
 
-            <input
+            <input className = "mensagem-usuario"
             value={this.state.valorInputMensagem}
             onChange={this.onChangeInputMensagem}
             placeholder={"Mensagem"}/>
-
+         
             <button onClick={this.solicitaRemetentesAndMensagens}>Enviar</button>
-          </div>
+              </Input>          
+          </Container>
+          </MainContainer>
         )
   
       }
