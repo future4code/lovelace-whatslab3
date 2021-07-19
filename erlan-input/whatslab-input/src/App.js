@@ -1,7 +1,7 @@
 import React from 'react'
 import MainContainer from './components/MainContainer'
 import Container from './components/Container'
-import Display from './components/Display'
+import Mensagem from './components/Mensagem'
 import Input from './components/Input'
 
 
@@ -42,17 +42,20 @@ class App extends React.Component {
 
   render(){
      const pessoasComMensagens = this.state.mensageiro.map((leitura)=>{
-       return (<div>
-    {leitura.usuario} : {leitura.mensagem} 
-       </div>
+       return (<Mensagem>
+          <h6>{leitura.usuario}: </h6>  
+         {leitura.mensagem}
+            </Mensagem>
         )
         })
+        
         return (
+         
           <MainContainer>
             <Container>
-            <Display>
-           <span> {pessoasComMensagens}</span>
-           </Display>
+           
+        {pessoasComMensagens}
+        
            <Input>
             <input className = "nome-usuario "
             value={this.state.valorInputUsuario}

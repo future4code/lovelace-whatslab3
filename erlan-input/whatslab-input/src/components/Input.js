@@ -1,17 +1,24 @@
 import styled from "styled-components";
 
 const Input = styled.div`
-display:flex;
-/* justify-content: space-evenly; */
-
 .nome-usuario{
-    width:5.5vw;
+    width:7vw;
 }
 
 .mensagem-usuario{
-    width:22.5vw
-}
-`
+    width:33vw;
 
+}
+
+button{
+    background-color:#075e54;
+    border:none;
+    height:3.5vh;
+    color:white;
+    font-style: bold;
+
+}
+
+`
 
 export default Input;
