@@ -12,6 +12,7 @@ Implementamos um MVP com o objetivo de criar uma funcionalidade de inserir o nom
 http://possessive-kick.surge.sh/
 
 ## Imagens
-![Captura de Tela (261)](https://user-images.githubusercontent.com/77033019/126089996-b706b869-d82a-4dfe-a016-b5006f75e6d3.png)
+![Captura de Tela (269)](https://user-images.githubusercontent.com/77033019/126090994-8f8d4483-a351-4b15-9ab0-60241acfa7e5.png)
+
 
 
